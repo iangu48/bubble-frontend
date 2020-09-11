@@ -1,0 +1,68 @@
+<html>
+<head>
+    <a title="Real Time Web Analytics" href="http://clicky.com/101234593"><img src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101234593);</script>
+    <script async src="//static.getclicky.com/js"></script>
+
+    <title>Bubble</title>
+    <link rel="icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <script src="scripts/d3.js" charset="utf-8"></script>
+    <script src="scripts/d3.layout.cloud.js"></script>
+    <script src="scripts/d3.wordcloud.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/words.js"></script>
+    <style media="screen">
+        footer{
+            font-family: calibri;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        #wordcloud{
+            margin-top: 30px;
+        }
+
+        a{
+            width: 150px;
+            margin-top: 30px;
+            margin-left: 7px;
+            margin-right: 7px;
+        }
+    </style>
+</head>
+
+
+<body style="text-align: center">
+
+<br>
+<div class="tab" id="categoryButtons">
+    <button type="button" class="btn btn-primary" value="">General</button>
+    <button type="button" class="btn btn-secondary" value="science-and-technology">Science and tech</button>
+    <button type="button" class="btn btn-danger" value="canada">Canada</button>
+    <button type="button" class="btn btn-success" value="politics">Politics</button>
+    <button type="button" class="btn btn-warning" value="entertainment">Entertainment</button>
+    <button type="button" class="btn btn-info" value="sports">Sports</button>
+</div>
+
+<div id="wordcloud"></div>
+
+<footer>
+    Copyright Bubble 2019 ©
+</footer>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        main("");
+    });
+
+    $('#categoryButtons').on("click", "button", function(event) {
+        main(this.value);
+    });
+</script>
+</html>
