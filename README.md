@@ -15,8 +15,10 @@ This application was created using:
 
 ## Contributors
 
-Frontend: [Annie Gao](https://github.com/tallspider) & [Joseph Wang](https://github.com/joseph001126)
+- [Annie Gao](https://github.com/tallspider)
+- [Joseph Wang](https://github.com/joseph001126)
+- [Ian Gu](https://github.com/iangu48)
+- [Alice Cai](https://github.com/alice-cai)
 
-Backend: [Ian Gu](https://github.com/iangu48) & [Alice Cai](https://github.com/alice-cai)
 
 This project was created in under 36 hours at Hack the Valley 2019.
