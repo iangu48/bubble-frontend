@@ -22,7 +22,7 @@ This application was created using:
 
 ---
 
-View the backend repo here https://github.com/iangu48/bubble-frontend
+View the backend repo here https://github.com/iangu48/bubble-backend
 
 ---
 
